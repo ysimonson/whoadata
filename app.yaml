@@ -1,0 +1,11 @@
+application: whoadata
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /healthcare/
+  static_files: static/healthcare/index.html
+  upload: static/healthcare/index.html
+- url: /
+  static_dir: static
